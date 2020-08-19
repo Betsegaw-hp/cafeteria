@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cafeteria</title>
+  <link rel="stylesheet" href="./style.css" >
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" >
+</head>
+<body>
+  <!-- header -->
+ <header class="header">
+   <nav class="nav">
+     <div class="section-center">
+        <img class="logo" src="node_modules\@fortawesome\fontawesome-free\svgs\brands\dribbble.svg"></img>
+        <div class="bars">
+        <i class="fas fa-bars fa-stream fa-2x"></i>
+        </div>
+      <ul class="list-container">
+          <li class="scroll-link" data-id="Home">Home</li>
+          <li class="scroll-link" data-id="About">About</li>
+          <li class="scroll-link" data-id="Menu">Menu</li>
+          <li class="scroll-link" data-id="Gallery">Gallery</li>
+          <li class="scroll-link" data-id="Contact Us">Contact Us</li>
+      </ul>
+    </div>
+    </nav>
+ </header>
+ <!-- <hr style="color:#222; margin-top:.2rem; width:100%;"> -->
+ <!-- main -->
+ <main id="main">
+     <article id="home">
+          <div class="home-content">
+            <div class="home-content-node">
+              <video muted autoplay loop class="video-container">
+                <source src="./media/Coffee - 26846.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="home-text-section">
+              <h4>welcome to hp cafeteria</h4>
+            <h2>delicious recipes</h2>
+            <p>Recusandae commodi dignissimos velit sed corrupti sequi praesentium<wbr> in. Provident eveniet magni. Explicabo nemo est debitis aut labore.
+            </p>
+            <button class="sec-btn">check out our Menu</button>
+            </div>
+          </div>
+     </article>
+     <article id="about">
+       <div class="section-center">
+         <div class="about-container">
+           <div class="about-content">
+             <h3>about our story</h3>
+             <p>Velit aspernatur sequi omnis sit aperiam dolor velit est. Doloremque saepe quam. Nesciunt sint cupiditate error atque dolor ut veniam. Nihil tenetur dolor dolorem eos eum.<wbr>
+              Nesciunt sint cupiditate error atque dolor ut veniam. Nihil tenetur dolor dolorem eos eum
+             </p>
+             <button class="btn">Learn more</button>
+            </div>
+           <div class="about-content">
+              <img src="./media/gummy-coffee.svg">
+            </div>
+         </div>
+       </div>
+     </article>
+     <article id="menu">
+       <div class="section-center">
+        <div class="menu-item">
+          <div class="menu-item-list" data-id="All menu">All menu</div>
+          <div class="menu-item-list" data-id="Breakfast">Breakfast</div>
+          <div class="menu-item-list" data-id="Lunch">Lunch</div>
+          <div class="menu-item-list" data-id="Dinner">Dinner</div>
+          <div class="menu-item-list" data-id="Budget Meal">Budget Meal</div>
+        </div>
+        <div class="menu-article-area">
+          
+       </div>
+       </div>
+     </article>
+     <article id="gallery"></article>
+     <article id="contact us"></article>
+ </main>
+
+  <!-- footer -->
+  <footer></footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+</html>
