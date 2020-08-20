@@ -83,6 +83,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color:currentColor;
 }
 img:not(.logo) {
   width: 100%;
@@ -309,8 +310,6 @@ about
   display: grid;
   place-items: center;
   height: auto;
-}
-.about-container {
   padding:2.5rem;
 }
 @media screen and (min-width :745px) {
@@ -323,7 +322,7 @@ Menu
 */
 #menu {
   background: var(--clr-grey-11);
-  padding:1rem;
+  padding:2.5rem;
 }
 .menu-item {
   display: grid;
@@ -411,4 +410,61 @@ figcaption {
     position: static;
     float: none;
   }
+}
+/* 
+========================
+contact
+========================
+*/
+#contact-us {
+  padding:2.5rem;
+}
+.contact-container {
+  display:flex;
+  flex-wrap: wrap;
+}
+.contact-list {
+  flex:0 0 100%;
+  padding:1rem 0;
+}
+#google-map {
+  /* display: grid;
+  place-items: center; */
+  max-width:100%;
+  height: auto;
+  cursor: crosshair;
+}
+.our-address {
+  padding-left: 3rem;
+  transition: var(--transition);
+}
+.our-address > .address > a {
+  position: relative;
+  left:-3rem;
+  bottom:-1.5rem;
+  color:var(--clr-red-light);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.our-address > .address > a:hover {
+  color:currentColor;
+}
+.contact-form ,.contact-form-field {
+  border: 1px solid #e5e5e5;
+  outline: none;
+  width: 80%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: var(--transition);
+  background-color:rgba(245, 246, 246, 0.986) ;
+}
+.contact-form-field {
+  padding:.5rem 0 5rem .5rem;
+}
+.fill-form >input:hover {
+ padding-left: 1rem;
+}
+.fill-form >input:focus {
+  border-color: currentColor;
 }

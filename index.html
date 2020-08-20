@@ -17,11 +17,18 @@
         <i class="fas fa-bars fa-stream fa-2x"></i>
         </div>
       <ul class="list-container">
-          <li class="scroll-link" data-id="Home">Home</li>
-          <li class="scroll-link" data-id="About">About</li>
-          <li class="scroll-link" data-id="Menu">Menu</li>
-          <li class="scroll-link" data-id="Gallery">Gallery</li>
-          <li class="scroll-link" data-id="Contact Us">Contact Us</li>
+          <a  href="#home">
+            <li class="scroll-link" data-id="Home">Home</li>
+          </a>
+          <a href="#about">
+            <li class="scroll-link"   data-id="About">About</li>
+          </a>
+          <a href="#menu">
+            <li class="scroll-link" data-id="Menu">Menu</li>
+          </a>
+         <a href="#contact-us">
+           <li class="scroll-link"  data-id="Contact Us">Contact Us</li>
+         </a>
       </ul>
     </div>
     </nav>
@@ -41,7 +48,7 @@
             <h2>delicious recipes</h2>
             <p>Recusandae commodi dignissimos velit sed corrupti sequi praesentium<wbr> in. Provident eveniet magni. Explicabo nemo est debitis aut labore.
             </p>
-            <button class="sec-btn">check out our Menu</button>
+            <a href="#menu" class="sec-btn">check out our Menu</a>
             </div>
           </div>
      </article>
@@ -80,8 +87,51 @@
        </div>
        </div>
      </article>
-     <article id="gallery"></article>
-     <article id="contact us"></article>
+     <article id="contact-us">
+       <div class="section-center">
+         <h3 class="menu-h1">contact us</h3>
+         <div id="google-map">
+          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3077677.937651032!2d-87.28249659781129!3d41.122630163665036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1597889365646!5m2!1sen!2set" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </div>
+        <div class="contact-container">
+          <div  class="contact-list">
+            <ul class="our-address">
+              <li class="address">
+                <a href="#google-map">
+                  <i class="fas fa-home fa-2x"></i>
+                </a>
+                <h4>Pollichfort</h4>
+                <p>05798 Balistreri Ford</p>
+              </li>
+              <li class="address">
+                <a href="tel:+251961405956">
+                  <i class="fas fa-phone fa-2x">
+                  </i>
+                </a>
+                <h4>558-965-3199</h4>
+                <p>man to Fi 9am to 6 pm</p>
+              </li>
+              <li class="address">
+                <a href="mailto:betse53@gmail.com">
+                  <i class="fas fa-mail-bulk fa-2x"></i>
+                </a>
+                <h4>Kenton.Zulauf@hotmail.com</h4>
+                <p>send us you query anytime!</p>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-list">
+            <form class="fill-form">
+              <input type="text" class="contact-form"  placeholder="Enter your name" required autocapitalize="word">
+              <input type="Email" class="contact-form" placeholder="Meredith94@example.net" required>
+              <input type="tel" class="contact-form" placeholder="Phone number" required><br>
+              <textarea class="contact-form-field" placeholder="Enter Messege"></textarea><br>
+              <button class="sec-btn" type="submit">send us messege</button>
+            </form>
+          </div>
+        </div>
+       </div>
+     </article>
  </main>
 
   <!-- footer -->
