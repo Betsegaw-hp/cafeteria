@@ -1,3 +1,6 @@
+//date 
+const date = document.querySelector("#date");
+date.innerHTML = new Date().getFullYear();
 //declaration
  const bars = document.querySelector(".bars i");
  const listContainer = document.querySelector(".list-container");
@@ -9,8 +12,8 @@ function getWidthInstantly() {
    map.style.width = (window.innerWidth -100)+"px";
 }
 // event listeners
-window.addEventListener("resize",getWidthInstantly );
-window.addEventListener("change orentation",getWidthInstantly );
+// window.addEventListener("resize",getWidthInstantly );
+// window.addEventListener("change orentation",getWidthInstantly );
 bars.addEventListener("click" ,()=>{
   listContainer.classList.toggle("show-li-container");
   bars.classList.toggle("fa-stream");
@@ -20,7 +23,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 });
 window.addEventListener("scroll", ()=> {
   header.classList.add("show-shodow");
-  if(Math.abs(Math.floor(window.scrollY)) === 0) {
+  if(Math.abs(Math.floor(window.scrollY)) == 0) {
     header.classList.remove("show-shodow");
   }
 });

@@ -33,7 +33,7 @@
     </div>
     </nav>
  </header>
- <!-- <hr style="color:#222; margin-top:.2rem; width:100%;"> -->
+
  <!-- main -->
  <main id="main">
      <article id="home">
@@ -83,15 +83,15 @@
           <div class="menu-item-list" data-id="Budget Meal">Budget Meal</div>
         </div>
         <div class="menu-article-area">
-          
+          <!-- there is js content in here -->
        </div>
        </div>
-     </article>
+      </article>
      <article id="contact-us">
        <div class="section-center">
          <h3 class="menu-h1">contact us</h3>
          <div id="google-map">
-          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3077677.937651032!2d-87.28249659781129!3d41.122630163665036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1597889365646!5m2!1sen!2set" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3077677.937651032!2d-87.28249659781129!3d41.122630163665036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1597889365646!5m2!1sen!2set" width=""  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
          </div>
         <div class="contact-container">
           <div  class="contact-list">
@@ -122,9 +122,12 @@
           </div>
           <div class="contact-list">
             <form class="fill-form">
-              <input type="text" class="contact-form"  placeholder="Enter your name" required autocapitalize="word">
-              <input type="Email" class="contact-form" placeholder="Meredith94@example.net" required>
-              <input type="tel" class="contact-form" placeholder="Phone number" required><br>
+              <label for="#name">Name</label><br>
+              <input type="text" id="name" class="contact-form"  placeholder="Enter your name" required autocapitalize="word"><br>
+              <label for="#email">Email</label><br>
+              <input type="Email" id="email" class="contact-form" placeholder="Meredith94@example.net" required><br>
+              <label for="#tel">Phone number </label><br>
+              <input type="tel" id="tel" class="contact-form" placeholder="eg. 711-349-5127 x27797" required><br>
               <textarea class="contact-form-field" placeholder="Enter Messege"></textarea><br>
               <button class="sec-btn" type="submit">send us messege</button>
             </form>
@@ -135,7 +138,17 @@
  </main>
 
   <!-- footer -->
-  <footer></footer>
+  <footer class="footer">
+    <div class="section-center">
+      <p>copyright &COPY; <span id="date"></span> All rights reserved | This template made by Betsegaw</p>
+      <ul class="social-links">
+        <li><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+        <li><a><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li><a><i class="fab fa-github fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="./js/app.js"></script>
   <script src="./js/menu.js"></script>
