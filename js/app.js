@@ -22,8 +22,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
   bars.classList.remove("fa-stream");
 });
 window.addEventListener("scroll", ()=> {
-  header.classList.add("show-shodow");
-  if(Math.abs(Math.floor(window.scrollY)) == 0) {
+  const navHieght = header.scrollHeight;
+
+  if(Math.abs(Math.floor(window.scrollY)) >= navHieght) {
+    header.classList.add("show-shodow");
+  } else {
     header.classList.remove("show-shodow");
   }
 });
