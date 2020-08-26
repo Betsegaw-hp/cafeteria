@@ -6,20 +6,17 @@ date.innerHTML = new Date().getFullYear();
  const listContainer = document.querySelector(".list-container");
  const header = document.querySelector(".header");
  const map = document.querySelector("#google-map"); 
+ const preLoad = document.querySelector(".preloader");
 //  functions
-function getWidthInstantly() {
-  console.log(map.clientWidth ,", " + window.innerWidth);
-   map.style.width = (window.innerWidth -100)+"px";
-}
+
 // event listeners
-// window.addEventListener("resize",getWidthInstantly );
-// window.addEventListener("change orentation",getWidthInstantly );
 bars.addEventListener("click" ,()=>{
   listContainer.classList.toggle("show-li-container");
   bars.classList.toggle("fa-stream");
 });
 window.addEventListener("DOMContentLoaded", ()=>{
   bars.classList.remove("fa-stream");
+  preLoad.classList.add("hide-preloader");
 });
 window.addEventListener("scroll", ()=> {
   const navHieght = header.scrollHeight;
