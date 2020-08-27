@@ -1,4 +1,35 @@
 /*
+  IE 10+ media query specification 
+*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .preloader {
+  display:none !important;
+ }
+ .home-content-node, #home  {
+   display:none !important;
+ }
+ .list-container {
+   height:200px !important;
+   display: flex !important;
+   flex-wrap: wrap-reverse !important;
+ }
+ .nav > .bars {
+    display:none !important;
+ }
+ .social-links > li:hover {
+   color: var(--clr-red-light);
+ }
+ .header{
+  position: static;
+  width:100%;
+  top: 0;
+  background: var(--clr-white);
+  transition: var(--transition);
+}
+}
+/* END*/
+
+/*
 =============== 
 Fonts
 ===============
