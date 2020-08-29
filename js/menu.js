@@ -76,7 +76,7 @@ function diplayMenuItems(menuVal) {
       <figure class="figure">
           <img loading="lazy" src=${item.img} class="card-img" alt=${item.title}>
           <figcaption>
-          <h4>${item.title}</h4>
+          <h4 role="link">${item.title}</h4>
           <h4 class="price">$${item.price}</h4>
           <p class="item-text">
           ${item.desc}
