@@ -445,6 +445,7 @@ Menu
   border-color: transparent rgba(243, 240, 207, 0.652);
   background: var(--clr-white);
   cursor: pointer;
+  outline:none;
 }
 .menu-item-list:hover {
   color: #222;
