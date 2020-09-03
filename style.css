@@ -297,6 +297,9 @@ header
   cursor: pointer;
   transition: var(--transition);
 }
+.nav > .bars:hover {
+  color:var(--clr-red-light);
+}
 .fa-stream {
   color:var(--clr-red-light);
 }
