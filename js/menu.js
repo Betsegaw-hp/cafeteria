@@ -100,7 +100,7 @@ const menuItems = menubtn.querySelectorAll(".menu-item-list");
 menuItems.forEach(Item =>{
   Item.addEventListener("click",(e)=>{
     e.preventDefault();
-    console.log(Item);
+    
     const category = e.currentTarget.dataset.id;
     const menuCategory = menu.filter( (menuitem)=> {
       // console.log(menuItem.category);
@@ -113,5 +113,10 @@ menuItems.forEach(Item =>{
     } else {
       diplayMenuItems(menuCategory);
     }
+    //style 
+    menuItems.forEach(btns => {
+      btns.classList.remove("menu-item-list-active");
+    e.currentTarget.classList.add("menu-item-list-active");
+    })
   });
 });
