@@ -643,6 +643,18 @@ footer
   color:white;
   transform: scale(1.2);
 }
+.social-links > li:hover::before {
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: rgb(241, 197, 197);
+  border-radius: 4px;
+  z-index: -1;
+  animation: pulse 1s infinite;
+}
 .bouncer {
   font-size: 1.25rem;
   position: fixed;
@@ -680,13 +692,13 @@ footer
     transform: scale(0.9);
     opacity: 1;
   }
-  50% {
+  /* 50% {
     transform: scale(1.2);
     opacity: 0.6;
-  }
+  } */
   100% {
-    transform: scale(2);
-    opacity: 0.1;
+    transform: scale(1.9);
+    opacity: 0;
   }
 }
 @keyframes bounce {
