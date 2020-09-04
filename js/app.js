@@ -19,16 +19,22 @@ bars.addEventListener("click" ,()=>{
     bars.classList.add("fa-stream");
   }
 });
-
+const navHieght = header.scrollHeight;
 window.addEventListener("DOMContentLoaded", ()=>{
   bars.classList.remove("fa-stream");
   bouncer.classList.add("bouncer-hide");
   preLoad.classList.add("hide-preloader");
+  if(Math.abs(Math.floor(window.pageYOffset)) >= navHieght) {
+    header.classList.add("show-shodow");
+  } 
+  else {
+    header.classList.remove("show-shodow");
+  }
 });
 
+
 window.addEventListener("scroll", ()=> {
-  const navHieght = header.scrollHeight;
-  if(Math.abs(Math.floor(window.scrollY)) >= navHieght) {
+  if(Math.abs(Math.floor(window.pageYOffset)) >= navHieght) {
     header.classList.add("show-shodow");
   } 
   else {

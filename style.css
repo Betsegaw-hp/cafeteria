@@ -52,7 +52,7 @@ Variables
   --clr-primary-3: hsl(58, 72%, 37%);
   --clr-primary-4: hsl(82, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: #e9b149;
+  --clr-primary-5: hsl(0, 2.7%, 43.1%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -73,8 +73,8 @@ Variables
   --clr-grey-10: rgb(241, 245, 248);
   --clr-grey-11: rgb(250, 250, 255);
   --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-red-dark: #bb2525;
+  --clr-red-light: #e66b6b;
   --clr-red-lighter:hsla(0, 41%, 77%, 0.486);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
@@ -155,7 +155,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-5);
   font-size: 14px;
 line-height: 22px;
 letter-spacing: 0.05em;
@@ -347,18 +347,24 @@ header
     color:var(--clr-black);
   }
   .header {
-    position: sticky;
+    position: absolute;
     height: auto ;
     top: 0;
+    padding-bottom:1.5em;
     background:transparent;
     color: var(--clr-white);
     padding: 1rem 1.5rem;
+    border-bottom: .5px ridge rgb(54, 45, 45);
     transition: var(--transition);
     z-index: 999;
   }
   .show-shodow  {
+    position: fixed;
+    top:0;
     background: var(--clr-white);
     color:var(--clr-black);
+    padding-bottom:1rem;
+    border: none;
   }
 }
 /* 
