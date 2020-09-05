@@ -374,7 +374,7 @@ main
 */
 #home {
   min-height: 100vh;
-  display: grid;
+  display: inline-grid;
   place-items: center;
   padding-left:2rem;
 }
