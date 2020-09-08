@@ -6,6 +6,7 @@ date.innerHTML = new Date().getFullYear();
  const listContainer = document.querySelector(".list-container");
  const header = document.querySelector(".header");
  const map = document.querySelector("#google-map"); 
+ const mapPreloader = document.querySelector(".map-preloader"); 
  const preLoad = document.querySelector(".preloader");
  const bouncer =document.querySelector(".bouncer");
 //  functions
@@ -74,4 +75,7 @@ scrollLinks.forEach((link) => {
     // close
     listContainer.classList.remove("show-li-container");
   },false);
+});
+window.addEventListener("load",()=> {
+  mapPreloader.classList.add("map-preloader-hide");
 });

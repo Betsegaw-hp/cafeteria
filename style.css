@@ -568,6 +568,16 @@ contact
   cursor: crosshair;
   margin:auto;
 }
+.preloader-map-svg {
+  position: absolute;
+  left:0;
+  right:0;
+  max-height: 400px;
+  margin-bottom: 10px;
+}
+.map-preloader-hide {
+  display: none;
+}
 .our-address {
   padding-left: 3rem;
   transition: var(--transition);
