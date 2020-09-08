@@ -336,6 +336,7 @@ header
     display:flex;
     height: auto;
     background-color: transparent;
+    transition: background-color 1ms linear;
     top:0;
     right:1em;
   }
