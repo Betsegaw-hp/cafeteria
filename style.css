@@ -473,7 +473,7 @@ Menu
   box-decoration-break: clone;
   flex-wrap: wrap;
   margin-top: 2rem; 
-  padding: 0 5rem;
+  padding: 0 1rem;
   transition:var(--transition);
 }
 .card-container {
@@ -484,15 +484,21 @@ Menu
   flex-grow: 0;
   flex-shrink: 1;
   transition: var(--transition);
-  box-shadow: var(--light-shadow);
+  background:var(--clr-white);
   letter-spacing: 0.028em;
   line-height: 26px;
   overflow: hidden;
+  cursor: pointer;
 }
 .card-img {
-  height: 50%;
+  height: 100%;
   object-fit: contain;
-  cursor: pointer;
+}
+.card-container:hover {
+  box-shadow: var(--light-shadow);
+}
+.card-container:hover  .card-img {
+  filter: brightness(85%);
 }
 .card-img::after,
 .card-img::before {
