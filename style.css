@@ -493,19 +493,13 @@ Menu
 .card-img {
   height: 100%;
   object-fit: contain;
+filter: grayscale(70%);
 }
 .card-container:hover {
   box-shadow: var(--light-shadow);
 }
 .card-container:hover  .card-img {
-  filter: brightness(85%);
-}
-.card-img::after,
-.card-img::before {
-  content: "";
-  position:absolute;
-  top:0;
-  background: #f00;
+  filter: grayscale(0);
 }
 .figure {
     background:var(--clr-white);
