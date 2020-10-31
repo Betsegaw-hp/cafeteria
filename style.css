@@ -375,7 +375,9 @@ main
 */
 #home {
   min-height: 100vh;
-  display: inline-grid;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   place-items: center;
   padding-left:2rem;
 }
@@ -392,7 +394,7 @@ main
 .home-text-section {
   position: sticky;
   max-width: 35rem;
-  text-align: left;
+  text-align: center;
   color:rgba(243, 123, 123, 0.506);
   border:1px solid transparent;
   z-index:200;
