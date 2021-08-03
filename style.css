@@ -205,7 +205,7 @@ p::selection {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
-  outline:none;
+  /* outline:none; */
 }
 .btn:hover {
   color: var(--clr-white);
@@ -355,7 +355,8 @@ header
     background:transparent;
     color: var(--clr-white);
     padding: 1rem 1.5rem;
-    border-bottom: .5px ridge rgb(54, 45, 45);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     transition: var(--transition);
     z-index: 999;
   }
@@ -427,6 +428,9 @@ about
   display:flex;
   flex-wrap: wrap;
 }
+.about-content .btn {
+  margin: 2rem 0;
+}
 
 /* 
 ==============
@@ -455,8 +459,9 @@ Menu
   border-color: transparent rgba(243, 240, 207, 0.652);
   background: var(--clr-white);
   cursor: pointer;
-  outline:none;
+  /* outline:none; */
 }
+.menu-item-list:hover,
 .menu-item-list-active {
   color:var(--clr-white);
   background: var(--clr-red-light);
@@ -493,19 +498,26 @@ Menu
 .card-img {
   height: 100%;
   object-fit: contain;
-filter: grayscale(70%);
+  filter: grayscale(70%);
+  transform: rotate(0deg) scale(1);
+  transition: all .5s ease;
 }
 .card-container:hover {
   box-shadow: var(--light-shadow);
 }
 .card-container:hover  .card-img {
   filter: grayscale(0);
+  transform: rotate(-10deg) scale(1.3);
+  transition: all .5s ease;
 }
 .figure {
     background:var(--clr-white);
 }
 figcaption {
   padding: 10px;
+  background: var(--clr-white);
+  z-index: 1;
+  position: relative;
 }
 figcaption > h4:first-child {
   cursor: pointer;
