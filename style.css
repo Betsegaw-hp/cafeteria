@@ -224,7 +224,7 @@ p::selection {
   font-family: var(--ff-primary);
   padding: 1rem;
   font-weight: 600;
-  transform: translateY(4rem);
+  transform: translateY(3rem);
 }
 .sec-btn:hover {
   color:var(--clr-white);
