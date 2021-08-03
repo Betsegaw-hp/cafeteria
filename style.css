@@ -155,13 +155,12 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-primary-5);
-  font-size: 14px;
-line-height: 22px;
-letter-spacing: 0.05em;
-font-weight: 300;
-font-style: italic;
-font-family: 'cafe Aroma', "BA Grapics";
+  color: #9e9e9e;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-family: system-ui;
 }
 p::selection {
   color: var(--clr-red-light);
@@ -220,9 +219,12 @@ p::selection {
 }
 .sec-btn {
   background: var(--clr-red-light);
-  border-radius: 0;
+  border-radius: var(--radius);
   border-color: var(--clr-red-light);
   font-family: var(--ff-primary);
+  padding: 1rem;
+  font-weight: 600;
+  transform: translateY(4rem);
 }
 .sec-btn:hover {
   color:var(--clr-white);
@@ -246,6 +248,27 @@ p::selection {
 } */
 main {
   min-height: 100vh;
+}
+/* scroll bar customizaion */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-red-light); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-red-dark); 
 }
 /* 
 =================
@@ -378,9 +401,10 @@ main
   min-height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   place-items: center;
-  padding-left:2rem;
+  padding-left: 3rem;
+  align-items: center;
 }
 .home-content > .home-content-node::after{
   content: "";
@@ -389,16 +413,18 @@ main
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(97deg, #040404e0, transparent),
+                linear-gradient(356deg, black, transparent),
+                linear-gradient(238deg, black, transparent) ;
     z-index: 1;
 }
 .home-text-section {
   position: sticky;
   max-width: 35rem;
-  text-align: center;
-  color:rgba(243, 123, 123, 0.506);
-  border:1px solid transparent;
-  z-index:200;
+  text-align: left;
+  color: rgb(243 123 123 / 71%);
+  border: 1px solid transparent;
+  z-index: 200;
   font-family: 'cafe Aroma', "BA Grapics";
 }
 .video-container {
